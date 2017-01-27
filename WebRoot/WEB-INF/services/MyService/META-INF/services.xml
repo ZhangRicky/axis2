@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<serviceGroup>
+	<service name="hello">     
+	    <parameter name="ServiceClass">com.Hello</parameter>    
+	    <operation name="getHello">    
+	        <messageReceiver class="org.apache.axis2.rpc.receivers.RPCMessageReceiver" />    
+	    </operation>    
+	    <operation name="getWorld">    
+	        <messageReceiver class="org.apache.axis2.rpc.receivers.RPCMessageReceiver" />    
+	    </operation>    
+	    <operation name="getHelloWorld">    
+	<!-- 这里要注意，当没有返回值时才用   
+	org.apache.axis2.rpc.receivers.RPCInOnlyMessageReceiver，没有参数还是用RPCMessageReceiver-->  
+	        <messageReceiver class="org.apache.axis2.rpc.receivers.RPCMessageReceiver" />    
+	    </operation>   
+	</service>
+	
+	<service name="returnInfo">
+		<parameter name="ServiceClass">com.SendRequest</parameter>   
+		<operation name="getResult">    
+	        <messageReceiver class="org.apache.axis2.rpc.receivers.RPCMessageReceiver" />    
+	    </operation>
+	</service>
+</serviceGroup>

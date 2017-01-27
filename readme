@@ -1,0 +1,12 @@
+Axis2 开发webService
+
+		WEB-INF
+		----conf		//Axis2配置文件
+		----modules		//Axis2文件
+		----services	//Axis2文件
+			----MyService
+				----META-INF
+					----services.xml	//服务暴露的配置文件
+					
+
+http://localhost:8080/工程/services/配置服务?wsdl
