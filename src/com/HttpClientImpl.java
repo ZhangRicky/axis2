@@ -10,7 +10,7 @@ import org.apache.http.impl.client.DefaultHttpClient;
 import org.apache.http.impl.conn.PoolingClientConnectionManager;
 import org.apache.http.util.EntityUtils;
 
-public class HttpActionServlet{
+public class HttpClientImpl{
 
 	private static HttpClient httpClient;
 	static {
@@ -55,7 +55,7 @@ public class HttpActionServlet{
 		//测试
 //		String urlString = "https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&appid=wxb8501c02ae21fe7b&secret=c7353c80752a68138d2e9d2d9ff8e3fa";
 		String urlString = "http://10.63.24.50/mps/mps/yd/registe.ajax?userName=caorj&phoneNo=18909231888&passwd=123456&idCardNo=&realName=&registType=phone_no&userType=normal";
-		HttpActionServlet gai = new HttpActionServlet();
+		HttpClientImpl gai = new HttpClientImpl();
 		//gai.pushMsg(urlString);
 	}
 }

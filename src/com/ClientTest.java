@@ -14,7 +14,7 @@ import org.apache.axis2.addressing.EndpointReference;
 import org.apache.axis2.client.Options;
 import org.apache.axis2.rpc.client.RPCServiceClient;
 
-public class Test {
+public class ClientTest {
 	public static void s(String args[]) throws AxisFault{
 		String res="";
 		org.apache.axis.client.Service service = new org.apache.axis.client.Service();
